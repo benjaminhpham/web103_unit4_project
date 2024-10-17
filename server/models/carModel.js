@@ -15,6 +15,7 @@ const getCarByIdQuery = async (id) => {
   try {
     const getCarById = `SELECT * FROM cars WHERE id = $1`;
     const results = await pool.query(getCarById, [parseInt(id)]);
+
     return results.rows[0];
   } catch (err) {
     console.error(err);
