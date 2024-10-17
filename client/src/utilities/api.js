@@ -15,8 +15,9 @@ export const request = async (URL, method = "GET", body = null) => {
     if (!res.ok) {
       throw new Error(`Error: ${res.status} ${res.statusText}`);
     }
-
-    return await res.json();
+    const data = res.json();
+    console.log(data);
+    return data;
   } catch (err) {
     console.error(`Request failed: ${err.message}`);
     throw err;

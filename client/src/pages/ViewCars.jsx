@@ -14,6 +14,7 @@ const ViewCars = () => {
 
     fetchCars();
   });
+
   return (
     <main>
       {cars.map((car) => (
@@ -27,7 +28,7 @@ const ViewCars = () => {
           <div className="car-card">
             <div className="card-summary">
               <p>
-                <strong>Exteriors</strong> {car.exterior}
+                <strong>Exterior:</strong> {car.exterior}
               </p>
               <p>
                 <strong>Roof:</strong> {car.roof}

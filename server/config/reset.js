@@ -17,7 +17,7 @@ const createCarsTable = async () => {
       roof INTEGER NOT NULL,
       wheels INTEGER NOT NULL,
       interior INTEGER NOT NULL,
-      price NUMERIC NOT NULL   
+      price REAL NOT NULL   
     ); 
   `;
   try {
@@ -36,7 +36,7 @@ const createExteriorsTable = async () => {
       id SERIAL PRIMARY KEY,
       color VARCHAR(255) NOT NULL,
       image TEXT NOT NULL,
-      price NUMERIC NOT NULL 
+      price REAL NOT NULL 
     ); 
   `;
   try {
@@ -55,7 +55,7 @@ const createRoofsTable = async () => {
       id SERIAL PRIMARY KEY,
       color VARCHAR(255) NOT NULL,
       image TEXT NOT NULL,
-      price NUMERIC NOT NULL,
+      price REAL NOT NULL,
       isconvertible BOOLEAN NOT NULL  
     ); 
   `;
@@ -75,7 +75,7 @@ const createWheelsTable = async () => {
       id SERIAL PRIMARY KEY,
       color VARCHAR(255) NOT NULL,
       image TEXT NOT NULL,
-      price NUMERIC NOT NULL 
+      price REAL NOT NULL 
     ); 
   `;
   try {
@@ -94,7 +94,7 @@ const createInteriorsTable = async () => {
       id SERIAL PRIMARY KEY,
       color VARCHAR(255) NOT NULL,
       image TEXT NOT NULL,
-      price NUMERIC NOT NULL,
+      price REAL NOT NULL,
       iscombo BOOLEAN 
     ); 
   `;
